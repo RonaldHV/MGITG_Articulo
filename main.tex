@@ -1,15 +1,17 @@
-\documentclass[artMGITG,SIG,accept,moreauthors,font4]{mgitg}%,pdftex
+%Si la línea de investigación es SIG
+\documentclass[artMGITG,SIG,accept,moreauthors,font4]{mgitg}
+%Si la línea de investigación es IDE
+%\documentclass[artMGITG,IDE,accept,moreauthors,font4]{mgitg}
+%Si la línea de investigación es PR
+%\documentclass[artMGITG,PR,accept,moreauthors,font4]{mgitg}
 
 %=====================================================
 \usepackage{multirow}
 \usepackage{subfigure}
 \usepackage{longtable}
 % \usepackage{graphicx}
+% Puede incluir los packages que necesite
 
-
-%-- Interlineado ----------------------
-% \renewcommand{\baselinestretch}{1.5}
-%--------------------------------------
 
 \makeatletter 
 
@@ -17,9 +19,9 @@
 \articlenumber{2}
 \pubvolume{1}
 \issuenum{1}
-\pubyear{2020}
+\pubyear{2022}
 \isbnnum{2711-3558 (En línea)}
-\copyrightyear{2020}
+\copyrightyear{2022}
 
 %-- TITULO DEL ARTICULO -----------------------
 \Title{Titulo del articulo ---Extenso---}
@@ -49,20 +51,18 @@
 \corres{Correspondencia: autor.uno@usa.edu.co}
 %----------------------------------------------
 
-%-- RESUMEN EN INGLÉS -------------------------
-% Abstract (Do not insert blank lines, i.e. \\) 
-% \abstract{{\color{red} Hace falta el abstract}}
+%-- RESUMEN EN INGLÉS ------------------------- 
+ \abstract{{\color{red} Hace falta el abstract}}
 %----------------------------------------------
 %-- PALABRAS CLAVE EN INGLÉS ------------------
-% \keyword{{\color{red} y las keywords}}
+ \keyword{{\color{red} y las keywords}}
 %----------------------------------------------
 
 %-- RESUMEN EN ESPAÑOL ------------------------
-% Abstract (Do not insert blank lines, i.e. \\) 
 \resumen{Texto para el resumen.}
 %----------------------------------------------
 %-- PALABRAS CLAVE EN ESPAÑOL -----------------
-\palabrasclave{kw1, kw2, kw3, kw4.}
+\palabrasclave{pc1, pc2, pc3, pc4.}
 %----------------------------------------------
 
 \setcounter{secnumdepth}{4}
@@ -147,7 +147,7 @@ Integer tincidunt fringilla lacus, at tincidunt lectus vulputate at. Phasellus v
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-- DISCUSION ------------------------
 \section{Discusión}
 %
 \noindent
@@ -155,17 +155,13 @@ Maecenas facilisis diam vitae libero volutpat, vel convallis ligula posuere. Mae
 
 Donec pretium, dolor non sagittis vehicula, sapien turpis congue turpis, ac ultricies turpis nibh id velit. Nullam quis vehicula mi, ut bibendum erat. Suspendisse sed quam eget lacus ornare mollis. Sed consequat bibendum augue id congue. Phasellus luctus odio sit amet sapien lacinia semper. Suspendisse feugiat, orci eu faucibus dignissim, tellus tortor laoreet purus, vel luctus arcu sapien nec nisl. Praesent rhoncus finibus purus, a suscipit dolor vestibulum vel. Curabitur laoreet bibendum accumsan. Suspendisse potenti. Maecenas placerat mollis purus, tincidunt sodales sapien. 
 
-
+%-- CONCLUSIONES ------------------------
 \section{Conclusiones}
 %
 \noindent
 Etiam et lacus vel sapien pretium interdum. Pellentesque pellentesque ultricies purus sed bibendum. Vestibulum finibus lorem a erat congue placerat id ut sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ipsum velit, efficitur id commodo ut, fermentum vitae purus. Curabitur at elit placerat, dictum nibh eget, varius velit. Donec ut mauris et dolor porttitor posuere. Suspendisse ut vehicula purus. Donec cursus quam ornare mi egestas varius. Sed molestie sem vel euismod porttitor. Ut rhoncus fringilla interdum. Aliquam ultrices at ex eget auctor. Integer vel felis urna. 
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\section{Patents}
-%This section is not mandatory, but may be added if there are patents resulting from the work reported in this manuscript.
 
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -196,29 +192,5 @@ Etiam et lacus vel sapien pretium interdum. Pellentesque pellentesque ultricies 
 %\externalbibliography{yes}
 \bibliography{referencias}
 
-%=====================================
-% References, variant B: internal bibliography
-%=====================================
-% \begin{thebibliography}{999}
-%     \input{referencias.tex}
-% \end{thebibliography}
 
 \end{document}
-
-
-% \begin{table}[!ht]
-%     \centering
-%         \caption{Imágenes multiespectrales procesadas}
-%     \begin{tabular}{ccc}
-%     \toprule
-%     Sensor & Imagen & año\\
-%     \midrule
-%     ETM & LE07\_L1TP\_007056\_20070131\_20170105\_01\_T1 & 31/01/2007\\
-%     ETM	& LE07\_L1TP\_007056\_20070216\_20170104\_01\_T1 & 16/02/2007\\
-%     TM	& LT05\_L1TP\_007056\_20091214\_20161017\_01\_T1 & 14/12/2009\\
-%     OLI	& LC08\_L1TP\_007056\_20140110\_20170426\_01\_T1 & 10/01/2014\\
-%     OLI	& LC08\_L1TP\_007056\_20180206\_20180221\_01\_T1 & 21/02/2018\\
-%     \bottomrule
-%     \end{tabular}
-%     \label{tab1}
-% \end{table}
