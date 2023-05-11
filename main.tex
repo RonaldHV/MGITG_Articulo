@@ -77,7 +77,7 @@
 \noindent
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sodales, purus a varius sollicitudin, nibh magna mattis erat, nec sodales est sapien nec purus. Vivamus a varius turpis, sed feugiat orci. Morbi et laoreet lacus. Praesent feugiat massa quis metus blandit tempus. Donec in ornare erat. Morbi ut lectus vel ante fermentum pharetra. Vivamus ut nisi mi. Aenean rhoncus ut nisl vitae maximus. Etiam id fermentum dui. Duis eu orci non libero egestas bibendum. Curabitur quis mi sem. Donec at gravida augue. Donec quis iaculis sem. Nulla efficitur odio nisi, imperdiet fermentum lectus ullamcorper at. Praesent leo mi, ultricies et sapien eu, vestibulum sagittis sem \cite{Ref01,Ref12,Ref13}.
 
-Sed quis risus ac mi bibendum egestas ac et nisi. Donec nec elit lorem. Integer arcu ipsum, interdum sed ipsum eget, molestie blandit sem. Ut lacus erat, auctor nec consequat ut, sagittis a neque. Phasellus volutpat tortor et turpis viverra accumsan. Sed condimentum tellus eget erat euismod tristique. Sed eu ante felis. Quisque est nisl, bibendum sodales felis sit amet, laoreet lobortis lacus. Suspendisse pretium dictum diam vel molestie. Vivamus bibendum elementum rhoncus. Nullam pretium nunc vel massa pretium tristique (ver Figura \ref{fig1}). 
+Sed quis risus ac mi bibendum egestas ac et nisi. Donec nec elit lorem. Integer arcu ipsum, interdum sed ipsum eget, molestie blandit sem. Ut lacus erat, auctor nec consequat ut, sagittis a neque. Phasellus volutpat tortor et turpis viverra accumsan. Sed condimentum tellus eget erat euismod tristique. Sed eu ante felis. Quisque est nisl, bibendum sodales felis sit amet, laoreet lobortis lacus. Suspendisse pretium dictum diam vel molestie. Vivamus bibendum elementum rhoncus. Nullam pretium nunc vel massa pretium tristique (ver Figura \ref{fig1}) \cite{Ref13}. 
 
 \begin{figure}[!ht]
     \centering
@@ -86,6 +86,7 @@ Sed quis risus ac mi bibendum egestas ac et nisi. Donec nec elit lorem. Integer 
     \label{fig1}
 \end{figure}
 
+También puede incluir figuras que tienen subfiguras como se muestra en la Figura \ref{fig3}.
 
 \begin{figure}[!ht]
     \centering
@@ -121,8 +122,6 @@ Integer tincidunt fringilla lacus, at tincidunt lectus vulputate at. Phasellus v
     
     \centering
         \caption{Grupos de información incluidos en el metadato de la firma espectral en el SIEC y su número de atributos}
-    % \begin{tabular}{p{0.3\textwidth}p{0.175\textwidth}p{0.35\textwidth}}
-    % \resizebox{.95\textwidth}{!}{\begin{minipage}{\textwidth}
     \begin{tabular}{lll}
     \toprule
     Atributos del conjunto de datos & Atributos del sensor & Atributos del dato de la firma espectral\\
@@ -141,7 +140,6 @@ Integer tincidunt fringilla lacus, at tincidunt lectus vulputate at. Phasellus v
     \bottomrule
     \end{tabular}
     \label{tab1}
-    % \end{minipage} }
 \end{table}
 
 
@@ -162,34 +160,13 @@ Donec pretium, dolor non sagittis vehicula, sapien turpis congue turpis, ac ultr
 Etiam et lacus vel sapien pretium interdum. Pellentesque pellentesque ultricies purus sed bibendum. Vestibulum finibus lorem a erat congue placerat id ut sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ipsum velit, efficitur id commodo ut, fermentum vitae purus. Curabitur at elit placerat, dictum nibh eget, varius velit. Donec ut mauris et dolor porttitor posuere. Suspendisse ut vehicula purus. Donec cursus quam ornare mi egestas varius. Sed molestie sem vel euismod porttitor. Ut rhoncus fringilla interdum. Aliquam ultrices at ex eget auctor. Integer vel felis urna. 
 
 
+%-- AGRADECIMIENTOS ------------------------
+% Si quiere presentar agradecimientos, debe quitar el comentario en la siguiente línea
+%\acknowledgments{}
 
- 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace{10pt} 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \acknowledgments{}
-
-% Apendices
-%\appendixtitles{no} 
-%\appendix
-%\section{}
-%\input{tablasapendice.tex}
-
-
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-- REFERENCIAS ------------------------
 \reftitle{Referencias}
-% Please provide either the correct journal abbreviation (e.g. according to the “List of Title Word Abbreviations” http://www.issn.org/services/online-services/access-to-the-ltwa/) or the full name of the journal.
-% Citations and References in Supplementary files are permitted provided that they also appear in the reference list here. 
-
-%=====================================
-% References, variant A: external bibliography
-%=====================================
-%\externalbibliography{yes}
+% Las referencias usadas en el documento se deben estar en en el archivo 'referencias.bib'. Si su archivo .bib tiene otro nombre, debe usar ese nombre en '\bibliography{}'
 \bibliography{referencias}
 
 

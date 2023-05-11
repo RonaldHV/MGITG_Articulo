@@ -379,7 +379,7 @@
     \titlespacing {\paragraph} {0pt} {15pt} {10pt}%{0pt} {12pt} {6pt}
     
     \newcommand{\acknowledgments}[1]{
-    \vspace{6pt}\noindent{\fontsize{10}{10}\selectfont\textbf{Agradecimientos:} {#1}\par}}
+    \vspace{20pt}\noindent{\fontsize{10}{10}\selectfont\textbf{Agradecimientos:} {#1}\par}}
     
     \newcommand{\funding}[1]{
     \vspace{6pt}\noindent{\fontsize{9}{9}\selectfont\textbf{Funding:} {#1}\par}}
