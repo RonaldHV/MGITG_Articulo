@@ -180,6 +180,32 @@ Dar una descripción de lo que se encontrará en esta sección. La enumeración 
 También puede incluir subsecciones en los apéndices.
 
 \section{Este es el título de otro apéndice}
-Puede incluir tantos apéndices como sea necesario. En los apéndices puede incluir figuras, tablas, etc.
+Puede incluir tantos apéndices como sea necesario. En los apéndices también puede incluir figuras como la Figura~\ref{figAp1}, tablas como la Tabla \ref{tabAp1}, etc.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figuras/figura4b}
+    \caption{Una figura en los apéndice. Si necesita subfiguras,también lo puede hacer.}
+    \label{figAp1}
+\end{figure}
+
+
+
+\begin{table}[!ht]    
+    \centering
+    \caption{Tabla sencilla como ejemplo en un apéndice}
+        \begin{tabular}{ccc}
+        \toprule
+        Columna 1 & Columna 2 & Columna 3\\
+        \midrule
+        123  & 456 & 789\\
+        abc & qwe & asd\\
+        qaz & wsx & edc\\
+        \bottomrule
+        \end{tabular}
+    \label{tabAp1}
+\end{table}
+
+
 
 \end{document}

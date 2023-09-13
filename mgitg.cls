@@ -419,9 +419,9 @@
     \gdef\theHsubsection{\@Alph\c@section.\@arabic\c@subsection}% for hyperref
     \csname appendixmore\endcsname
     
-    \renewcommand{\thefigure}{A\arabic{figure}}
+    \renewcommand{\thefigure}{\Alph{section}\arabic{figure}}
     \setcounter{figure}{0}
-    \renewcommand{\thetable}{A\arabic{table}}
+    \renewcommand{\thetable}{\Alph{section}\arabic{table}}
     \setcounter{table}{0}
     \renewcommand{\theequation}{A\arabic{equation}}
     \setcounter{equation}{0}
