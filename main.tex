@@ -169,5 +169,43 @@ Etiam et lacus vel sapien pretium interdum. Pellentesque pellentesque ultricies 
 % Las referencias usadas en el documento se deben estar en en el archivo 'referencias.bib'. Si su archivo .bib tiene otro nombre, debe usar ese nombre en '\bibliography{}'
 \bibliography{referencias}
 
+%-- APÉNDICES ------------------------
+% Si su documento tiene información adicional, la cual se debe inlcuir en un apéndice, lo puede hacer aquí. Si no lo necesita, puede poner en comentarios las siguientes líneas, o bien eliminarlas.
+%\appendixtitles{yes} 
+\appendix   % De aquí para adelante todas las secciones son consideradas como apéndices
+\section{Este es el título de este apéndice}
+Dar una descripción de lo que se encontrará en esta sección. La enumeración de los apéndices se hace automaticamente, no es necesario que Ud. escriba, por ejemplo, para el nombre de este apéndice: Apéndice A.
+
+\subsection{Una subsección en el apéndice}
+También puede incluir subsecciones en los apéndices.
+
+\section{Este es el título de otro apéndice}
+Puede incluir tantos apéndices como sea necesario. En los apéndices también puede incluir figuras como la Figura~\ref{figAp1}, tablas como la Tabla \ref{tabAp1}, etc.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figuras/figura4b}
+    \caption{Una figura en los apéndice. Si necesita subfiguras,también lo puede hacer.}
+    \label{figAp1}
+\end{figure}
+
+
+
+\begin{table}[!ht]    
+    \centering
+    \caption{Tabla sencilla como ejemplo en un apéndice}
+        \begin{tabular}{ccc}
+        \toprule
+        Columna 1 & Columna 2 & Columna 3\\
+        \midrule
+        123  & 456 & 789\\
+        abc & qwe & asd\\
+        qaz & wsx & edc\\
+        \bottomrule
+        \end{tabular}
+    \label{tabAp1}
+\end{table}
+
+
 
 \end{document}

@@ -401,39 +401,27 @@
     \gdef\thesubsection{\@Alph\c@section.\@arabic\c@subsection}%
     %
     \titleformat {\section} [block] {\raggedright \fontsize{10}{10}\selectfont\bfseries} {%
-    	\ifthenelse{\equal{\@appendixtitles}{yes}}{%
-    		\appendixname~\thesection.%
-    		}{%
-    		\appendixname~\thesection~%
-    		}
-    	} {0pt} {}
+    	\appendixname~\thesection.
+    	} {10pt} {}
     \titlespacing {\section} {0pt} {12pt} {6pt}
     %
     \titleformat {\subsection} [block] {\raggedright \fontsize{10}{10}\selectfont\itshape} {%
-    	\ifthenelse{\equal{\@appendixtitles}{yes}}{%
-    		\appendixname~\thesubsection.%
-    		}{%
-    		\appendixname~\thesubsection%
-    		}
-    	} {0pt} {}
+    	\appendixname~\thesubsection.%
+    	} {10pt} {}
     \titlespacing {\subsection} {0pt} {12pt} {6pt}
     %
     \titleformat {\subsubsection} [block] {\raggedright \fontsize{10}{10}\selectfont} {%
-    	\ifthenelse{\equal{\@appendixtitles}{yes}}{%
-    		\appendixname~\thesubsubsection.%
-    		}{%
-    		\appendixname~\thesubsubsection%
-    		}
-    	} {0pt} {}
+    	\appendixname~\thesubsubsection.%
+    	} {10pt} {}
     \titlespacing {\subsubsection} {0pt} {12pt} {6pt}
     %
     \gdef\theHsection{\@Alph\c@section.}% for hyperref
     \gdef\theHsubsection{\@Alph\c@section.\@arabic\c@subsection}% for hyperref
     \csname appendixmore\endcsname
     
-    \renewcommand{\thefigure}{A\arabic{figure}}
+    \renewcommand{\thefigure}{\Alph{section}\arabic{figure}}
     \setcounter{figure}{0}
-    \renewcommand{\thetable}{A\arabic{table}}
+    \renewcommand{\thetable}{\Alph{section}\arabic{table}}
     \setcounter{table}{0}
     \renewcommand{\theequation}{A\arabic{equation}}
     \setcounter{equation}{0}
